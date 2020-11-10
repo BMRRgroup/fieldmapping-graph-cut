@@ -1,5 +1,4 @@
 * Description
-
 Example MATLAB source code to perform field-mapping using the single-step
 graph-cut based on the variable layer grah construction from the article.
 
@@ -9,17 +8,19 @@ Single-Min-Cut Graph-Cut for Field-Mapping, Magnetic Resonance in Medicine,
 (2018)./ (TBD: doi)
 
 #+BEGIN_SRC bibtex
-  @article{boehm19_sensit_quant_suscep_mappin_measur,
-    author =       {Christof Böhm and Maximilian N. Diefenbach 
-                    and Dimitrios C. Karampinos},
-    title =        {Improved Body Quantitative Susceptibility Mapping by Using a
-                    Novel Variable-Layer Single-Min-Cut Graph-Cut for
-                    Field-Mapping},
-    journal =      {Magnetic Resonance in Medicine},
-    year =         2019,
-    doi =          {},
-    url =          {},
-  }
+@article{boehm20_improv_body_quant_suscep_mappin,
+  author =       {Christof Boehm and Maximilian N. Diefenbach and Marcus R.
+                  Makowski and Dimitrios C. Karampinos},
+  title =        {Improved Body Quantitative Susceptibility Mapping By Using a
+                  Variable‐layer Single‐min‐cut Graph‐cut for Field‐mapping},
+  journal =      {Magnetic Resonance in Medicine},
+  volume =       {nil},
+  number =       {nil},
+  pages =        {mrm.28515},
+  year =         2020,
+  doi =          {10.1002/mrm.28515},
+  url =          {https://doi.org/10.1002/mrm.28515},
+}
 #+END_SRC
 
 * Repository Overview
