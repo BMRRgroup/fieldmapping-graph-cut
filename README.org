@@ -1,12 +1,12 @@
 * Description
 Example MATLAB source code to perform field-mapping using the single-step
-graph-cut based on the variable layer grah construction from the article.
+graph-cut based on the variable-layer graph construction from the article
 
 /Christof Böhm, Maximilian N. Diefenbach, & Dimitrios C. Karampinos, Improved
-Body Quantitative Susceptibility Mapping by Using a Novel Variable-Layer
+Body Quantitative Susceptibility Mapping by Using a Variable-Layer
 Single-Min-Cut Graph-Cut for Field-Mapping, Magnetic Resonance in Medicine,
-(2018)./ (TBD: doi)
-
+(2018)./ [[https://doi.org/10.1002/mrm.28515]]
+/
 #+BEGIN_SRC bibtex
 @article{boehm20_improv_body_quant_suscep_mappin,
   author =       {Christof Boehm and Maximilian N. Diefenbach and Marcus R.
@@ -24,9 +24,11 @@ Single-Min-Cut Graph-Cut for Field-Mapping, Magnetic Resonance in Medicine,
 #+END_SRC
 
 * Repository Overview
-  - =scripts/=: batch processing functionality
-    + =demo.m=: runs field-mapping method from the paper on example dataset
-  - =code/=: core algorithms
-    + =3rd=: third party libraries
-  - =data/=: includes data of one examplary subject
-    + =20180406_144018_0302_ImDataParams.mat:= TIMGRE data
+  - =code/=: all code is stored in this folder
+    + =gandalf/=: contains all code needed for the graph-cut algorithm
+      - =residualcalculation_cuda.cu=: mexcuda file to calculate
+        water--fat VARPRO residuals. Pre-compiled file for ubuntu is also added.
+    + =runGC.m=: runs graph-cut method on example dataset
+        
+  - =data/=: includes data of one exemplary lumbar spine subject
+    + =exampleData.mat= TIMGRE data
